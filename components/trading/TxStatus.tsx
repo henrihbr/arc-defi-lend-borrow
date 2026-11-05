@@ -20,7 +20,8 @@
 
 import { parseTxError } from "@/lib/errors";
 
-const EXPLORER_BASE = process.env.NEXT_PUBLIC_EXPLORER_URL;
+const EXPLORER_BASE =
+  process.env.NEXT_PUBLIC_EXPLORER_URL || "https://explorer.testnet.arc.io";
 
 export interface TxStatusProps {
   isPending: boolean;
